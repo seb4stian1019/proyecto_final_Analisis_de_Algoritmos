@@ -1,0 +1,4 @@
+Fecha: 2026-11-02 02:15
+Sistema: Windows-11-10.0.26300-SP0
+Procesador: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+Python: 3.14.0

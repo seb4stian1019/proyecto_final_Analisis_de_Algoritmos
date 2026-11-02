@@ -1,0 +1,2806 @@
+{
+ "articulo": {
+  "id": 17,
+  "titulo": "A Systematic Review of AI-Driven Educational Assessment in STEM Education"
+ },
+ "patron": "systems",
+ "parrafo": "moreover, the systematic review found that both traditional algorithms (e.g., natural language processing, machine learning) and advanced algorithms (e.g., deep learning, neural fuzzy systems) were applied in stem educational assessment.",
+ "ocurrencias": [
+  184
+ ],
+ "comparaciones_fuerza_bruta": 254,
+ "kmp": {
+  "pi": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "pasos_pi": [
+   {
+    "q": 1,
+    "caracter": "y",
+    "k_antes": 0,
+    "retrocesos": [],
+    "compara_con": "s",
+    "coincide": false,
+    "pi": 0
+   },
+   {
+    "q": 2,
+    "caracter": "s",
+    "k_antes": 0,
+    "retrocesos": [],
+    "compara_con": "s",
+    "coincide": true,
+    "pi": 1
+   },
+   {
+    "q": 3,
+    "caracter": "t",
+    "k_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "compara_con": "s",
+    "coincide": false,
+    "pi": 0
+   },
+   {
+    "q": 4,
+    "caracter": "e",
+    "k_antes": 0,
+    "retrocesos": [],
+    "compara_con": "s",
+    "coincide": false,
+    "pi": 0
+   },
+   {
+    "q": 5,
+    "caracter": "m",
+    "k_antes": 0,
+    "retrocesos": [],
+    "compara_con": "s",
+    "coincide": false,
+    "pi": 0
+   },
+   {
+    "q": 6,
+    "caracter": "s",
+    "k_antes": 0,
+    "retrocesos": [],
+    "compara_con": "s",
+    "coincide": true,
+    "pi": 1
+   }
+  ],
+  "eventos": [
+   {
+    "tipo": "salto",
+    "cantidad": 14
+   },
+   {
+    "i": 14,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 15,
+    "caracter": "y",
+    "q_antes": 1,
+    "retrocesos": [],
+    "q_despues": 2,
+    "encontrado": false
+   },
+   {
+    "i": 16,
+    "caracter": "s",
+    "q_antes": 2,
+    "retrocesos": [],
+    "q_despues": 3,
+    "encontrado": false
+   },
+   {
+    "i": 17,
+    "caracter": "t",
+    "q_antes": 3,
+    "retrocesos": [],
+    "q_despues": 4,
+    "encontrado": false
+   },
+   {
+    "i": 18,
+    "caracter": "e",
+    "q_antes": 4,
+    "retrocesos": [],
+    "q_despues": 5,
+    "encontrado": false
+   },
+   {
+    "i": 19,
+    "caracter": "m",
+    "q_antes": 5,
+    "retrocesos": [],
+    "q_despues": 6,
+    "encontrado": false
+   },
+   {
+    "i": 20,
+    "caracter": "a",
+    "q_antes": 6,
+    "retrocesos": [
+     6
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 48
+   },
+   {
+    "i": 69,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 70,
+    "caracter": " ",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 29
+   },
+   {
+    "i": 100,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 101,
+    "caracter": "s",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 102,
+    "caracter": "i",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 44
+   },
+   {
+    "i": 147,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 148,
+    "caracter": " ",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 35
+   },
+   {
+    "i": 184,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 185,
+    "caracter": "y",
+    "q_antes": 1,
+    "retrocesos": [],
+    "q_despues": 2,
+    "encontrado": false
+   },
+   {
+    "i": 186,
+    "caracter": "s",
+    "q_antes": 2,
+    "retrocesos": [],
+    "q_despues": 3,
+    "encontrado": false
+   },
+   {
+    "i": 187,
+    "caracter": "t",
+    "q_antes": 3,
+    "retrocesos": [],
+    "q_despues": 4,
+    "encontrado": false
+   },
+   {
+    "i": 188,
+    "caracter": "e",
+    "q_antes": 4,
+    "retrocesos": [],
+    "q_despues": 5,
+    "encontrado": false
+   },
+   {
+    "i": 189,
+    "caracter": "m",
+    "q_antes": 5,
+    "retrocesos": [],
+    "q_despues": 6,
+    "encontrado": false
+   },
+   {
+    "i": 190,
+    "caracter": "s",
+    "q_antes": 6,
+    "retrocesos": [],
+    "q_despues": 7,
+    "encontrado": true
+   },
+   {
+    "i": 191,
+    "caracter": ")",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 17
+   },
+   {
+    "i": 209,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 210,
+    "caracter": "t",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 16
+   },
+   {
+    "i": 227,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 228,
+    "caracter": "s",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 229,
+    "caracter": "e",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "i": 230,
+    "caracter": "s",
+    "q_antes": 0,
+    "retrocesos": [],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 231,
+    "caracter": "s",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 1,
+    "encontrado": false
+   },
+   {
+    "i": 232,
+    "caracter": "m",
+    "q_antes": 1,
+    "retrocesos": [
+     1
+    ],
+    "q_despues": 0,
+    "encontrado": false
+   },
+   {
+    "tipo": "salto",
+    "cantidad": 4
+   }
+  ],
+  "comparaciones": 248
+ },
+ "boyer_moore": {
+  "ultima": {
+   "s": 6,
+   "y": 1,
+   "t": 3,
+   "e": 4,
+   "m": 5
+  },
+  "sufijo": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   4,
+   1
+  ],
+  "sufijo_explicado": [
+   {
+    "j": 6,
+    "sufijo_bueno": "",
+    "desplazamiento": 1
+   },
+   {
+    "j": 5,
+    "sufijo_bueno": "s",
+    "desplazamiento": 4
+   },
+   {
+    "j": 4,
+    "sufijo_bueno": "ms",
+    "desplazamiento": 6
+   },
+   {
+    "j": 3,
+    "sufijo_bueno": "ems",
+    "desplazamiento": 6
+   },
+   {
+    "j": 2,
+    "sufijo_bueno": "tems",
+    "desplazamiento": 6
+   },
+   {
+    "j": 1,
+    "sufijo_bueno": "stems",
+    "desplazamiento": 6
+   },
+   {
+    "j": 0,
+    "sufijo_bueno": "ystems",
+    "desplazamiento": 6
+   },
+   {
+    "j": -1,
+    "sufijo_bueno": "systems",
+    "desplazamiento": 6
+   }
+  ],
+  "filas": [
+   {
+    "s": 0,
+    "ventana": "moreove",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "e",
+    "salto_malo": 2,
+    "salto_bueno": 1,
+    "salto": 2,
+    "resultado": "fallo"
+   },
+   {
+    "s": 2,
+    "ventana": "reover,",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": ",",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 9,
+    "ventana": " the sy",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "y",
+    "salto_malo": 5,
+    "salto_bueno": 1,
+    "salto": 5,
+    "resultado": "fallo"
+   },
+   {
+    "s": 14,
+    "ventana": "systema",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "a",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 21,
+    "ventana": "tic rev",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "v",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 28,
+    "ventana": "iew fou",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "u",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 35,
+    "ventana": "nd that",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "t",
+    "salto_malo": 3,
+    "salto_bueno": 1,
+    "salto": 3,
+    "resultado": "fallo"
+   },
+   {
+    "s": 38,
+    "ventana": "that bo",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "o",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 45,
+    "ventana": "th trad",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "d",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 52,
+    "ventana": "itional",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "l",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 59,
+    "ventana": " algori",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "i",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 66,
+    "ventana": "thms (e",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "e",
+    "salto_malo": 2,
+    "salto_bueno": 1,
+    "salto": 2,
+    "resultado": "fallo"
+   },
+   {
+    "s": 68,
+    "ventana": "ms (e.g",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "g",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 75,
+    "ventana": "., natu",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "u",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 82,
+    "ventana": "ral lan",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "n",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 89,
+    "ventana": "guage p",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "p",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 96,
+    "ventana": "rocessi",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "i",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 103,
+    "ventana": "ng, mac",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "c",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 110,
+    "ventana": "hine le",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "e",
+    "salto_malo": 2,
+    "salto_bueno": 1,
+    "salto": 2,
+    "resultado": "fallo"
+   },
+   {
+    "s": 112,
+    "ventana": "ne lear",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "r",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 119,
+    "ventana": "ning) a",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "a",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 126,
+    "ventana": "nd adva",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "a",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 133,
+    "ventana": "nced al",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "l",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 140,
+    "ventana": "gorithm",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "m",
+    "salto_malo": 1,
+    "salto_bueno": 1,
+    "salto": 1,
+    "resultado": "fallo"
+   },
+   {
+    "s": 141,
+    "ventana": "orithms",
+    "comparaciones": 3,
+    "j": 4,
+    "malo": "h",
+    "salto_malo": 5,
+    "salto_bueno": 6,
+    "salto": 6,
+    "resultado": "fallo"
+   },
+   {
+    "s": 147,
+    "ventana": "s (e.g.",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": ".",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 154,
+    "ventana": ", deep ",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": " ",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 161,
+    "ventana": "learnin",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "n",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 168,
+    "ventana": "g, neur",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "r",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 175,
+    "ventana": "al fuzz",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "z",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 182,
+    "ventana": "y syste",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "e",
+    "salto_malo": 2,
+    "salto_bueno": 1,
+    "salto": 2,
+    "resultado": "fallo"
+   },
+   {
+    "s": 184,
+    "ventana": "systems",
+    "comparaciones": 7,
+    "j": -1,
+    "malo": null,
+    "salto_malo": null,
+    "salto_bueno": 6,
+    "salto": 6,
+    "resultado": "ocurrencia"
+   },
+   {
+    "s": 190,
+    "ventana": "s) were",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "e",
+    "salto_malo": 2,
+    "salto_bueno": 1,
+    "salto": 2,
+    "resultado": "fallo"
+   },
+   {
+    "s": 192,
+    "ventana": " were a",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "a",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 199,
+    "ventana": "pplied ",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": " ",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 206,
+    "ventana": "in stem",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "m",
+    "salto_malo": 1,
+    "salto_bueno": 1,
+    "salto": 1,
+    "resultado": "fallo"
+   },
+   {
+    "s": 207,
+    "ventana": "n stem ",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": " ",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 214,
+    "ventana": "educati",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "i",
+    "salto_malo": 7,
+    "salto_bueno": 1,
+    "salto": 7,
+    "resultado": "fallo"
+   },
+   {
+    "s": 221,
+    "ventana": "onal as",
+    "comparaciones": 2,
+    "j": 5,
+    "malo": "a",
+    "salto_malo": 6,
+    "salto_bueno": 4,
+    "salto": 6,
+    "resultado": "fallo"
+   },
+   {
+    "s": 227,
+    "ventana": "ssessme",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "e",
+    "salto_malo": 2,
+    "salto_bueno": 1,
+    "salto": 2,
+    "resultado": "fallo"
+   },
+   {
+    "s": 229,
+    "ventana": "essment",
+    "comparaciones": 1,
+    "j": 6,
+    "malo": "t",
+    "salto_malo": 3,
+    "salto_bueno": 1,
+    "salto": 3,
+    "resultado": "fallo"
+   }
+  ],
+  "comparaciones": 50
+ },
+ "rabin_karp": {
+  "base": 256,
+  "primo_pequeno": 101,
+  "primo_grande": 1000000007,
+  "pequeno": {
+   "pasos_patron": [
+    {
+     "caracter": "s",
+     "codigo": 115,
+     "hash_antes": 0,
+     "hash": 14
+    },
+    {
+     "caracter": "y",
+     "codigo": 121,
+     "hash_antes": 14,
+     "hash": 69
+    },
+    {
+     "caracter": "s",
+     "codigo": 115,
+     "hash_antes": 69,
+     "hash": 3
+    },
+    {
+     "caracter": "t",
+     "codigo": 116,
+     "hash_antes": 3,
+     "hash": 76
+    },
+    {
+     "caracter": "e",
+     "codigo": 101,
+     "hash_antes": 76,
+     "hash": 64
+    },
+    {
+     "caracter": "m",
+     "codigo": 109,
+     "hash_antes": 64,
+     "hash": 30
+    },
+    {
+     "caracter": "s",
+     "codigo": 115,
+     "hash_antes": 30,
+     "hash": 18
+    }
+   ],
+   "hash_patron": 18,
+   "h": 25,
+   "ventanas": [
+    {
+     "s": 0,
+     "ventana": "moreove",
+     "hash": 10,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": "r"
+    },
+    {
+     "s": 1,
+     "ventana": "oreover",
+     "hash": 55,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": ","
+    },
+    {
+     "s": 2,
+     "ventana": "reover,",
+     "hash": 18,
+     "coincide_hash": true,
+     "verificacion": "colisión",
+     "sale": "r",
+     "entra": " "
+    },
+    {
+     "s": 3,
+     "ventana": "eover, ",
+     "hash": 18,
+     "coincide_hash": true,
+     "verificacion": "colisión",
+     "sale": "e",
+     "entra": "t"
+    },
+    {
+     "s": 4,
+     "ventana": "over, t",
+     "hash": 78,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": "h"
+    },
+    {
+     "s": 5,
+     "ventana": "ver, th",
+     "hash": 7,
+     "coincide_hash": false,
+     "sale": "v",
+     "entra": "e"
+    },
+    {
+     "s": 6,
+     "ventana": "er, the",
+     "hash": 52,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": " "
+    },
+    {
+     "s": 7,
+     "ventana": "r, the ",
+     "hash": 12,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "s"
+    },
+    {
+     "s": 8,
+     "ventana": ", the s",
+     "hash": 80,
+     "coincide_hash": false,
+     "sale": ",",
+     "entra": "y"
+    },
+    {
+     "s": 9,
+     "ventana": " the sy",
+     "hash": 86,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "s"
+    },
+    {
+     "s": 10,
+     "ventana": "the sys",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "t"
+    },
+    {
+     "s": 11,
+     "ventana": "he syst",
+     "hash": 4,
+     "coincide_hash": false,
+     "sale": "h",
+     "entra": "e"
+    },
+    {
+     "s": 12,
+     "ventana": "e syste",
+     "hash": 4,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "m"
+    },
+    {
+     "s": 13,
+     "ventana": " system",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "a"
+    },
+    {
+     "s": 14,
+     "ventana": "systema",
+     "hash": 0,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "t"
+    },
+    {
+     "s": 15,
+     "ventana": "ystemat",
+     "hash": 2,
+     "coincide_hash": false,
+     "sale": "y",
+     "entra": "i"
+    },
+    {
+     "s": 16,
+     "ventana": "stemati",
+     "hash": 79,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "c"
+    },
+    {
+     "s": 17,
+     "ventana": "tematic",
+     "hash": 9,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": " "
+    },
+    {
+     "s": 18,
+     "ventana": "ematic ",
+     "hash": 64,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "r"
+    },
+    {
+     "s": 19,
+     "ventana": "matic r",
+     "hash": 35,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": "e"
+    },
+    {
+     "s": 20,
+     "ventana": "atic re",
+     "hash": 79,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "v"
+    },
+    {
+     "s": 21,
+     "ventana": "tic rev",
+     "hash": 88,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "i"
+    },
+    {
+     "s": 22,
+     "ventana": "ic revi",
+     "hash": 60,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "e"
+    },
+    {
+     "s": 23,
+     "ventana": "c revie",
+     "hash": 62,
+     "coincide_hash": false,
+     "sale": "c",
+     "entra": "w"
+    },
+    {
+     "s": 24,
+     "ventana": " review",
+     "hash": 6,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": " "
+    },
+    {
+     "s": 25,
+     "ventana": "review ",
+     "hash": 81,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "f"
+    },
+    {
+     "s": 26,
+     "ventana": "eview f",
+     "hash": 56,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "o"
+    },
+    {
+     "s": 27,
+     "ventana": "view fo",
+     "hash": 4,
+     "coincide_hash": false,
+     "sale": "v",
+     "entra": "u"
+    },
+    {
+     "s": 28,
+     "ventana": "iew fou",
+     "hash": 7,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "n"
+    },
+    {
+     "s": 29,
+     "ventana": "ew foun",
+     "hash": 37,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "d"
+    },
+    {
+     "s": 30,
+     "ventana": "w found",
+     "hash": 78,
+     "coincide_hash": false,
+     "sale": "w",
+     "entra": " "
+    },
+    {
+     "s": 31,
+     "ventana": " found ",
+     "hash": 43,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "t"
+    },
+    {
+     "s": 32,
+     "ventana": "found t",
+     "hash": 42,
+     "coincide_hash": false,
+     "sale": "f",
+     "entra": "h"
+    },
+    {
+     "s": 33,
+     "ventana": "ound th",
+     "hash": 12,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": "a"
+    },
+    {
+     "s": 34,
+     "ventana": "und tha",
+     "hash": 72,
+     "coincide_hash": false,
+     "sale": "u",
+     "entra": "t"
+    },
+    {
+     "s": 35,
+     "ventana": "nd that",
+     "hash": 79,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": " "
+    },
+    {
+     "s": 36,
+     "ventana": "d that ",
+     "hash": 26,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": "b"
+    },
+    {
+     "s": 37,
+     "ventana": " that b",
+     "hash": 24,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "o"
+    },
+    {
+     "s": 38,
+     "ventana": "that bo",
+     "hash": 21,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "t"
+    },
+    {
+     "s": 39,
+     "ventana": "hat bot",
+     "hash": 89,
+     "coincide_hash": false,
+     "sale": "h",
+     "entra": "h"
+    },
+    {
+     "s": 40,
+     "ventana": "at both",
+     "hash": 52,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": " "
+    },
+    {
+     "s": 41,
+     "ventana": "t both ",
+     "hash": 59,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "t"
+    },
+    {
+     "s": 42,
+     "ventana": " both t",
+     "hash": 20,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "r"
+    },
+    {
+     "s": 43,
+     "ventana": "both tr",
+     "hash": 10,
+     "coincide_hash": false,
+     "sale": "b",
+     "entra": "a"
+    },
+    {
+     "s": 44,
+     "ventana": "oth tra",
+     "hash": 41,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": "d"
+    },
+    {
+     "s": 45,
+     "ventana": "th trad",
+     "hash": 25,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "i"
+    },
+    {
+     "s": 46,
+     "ventana": "h tradi",
+     "hash": 92,
+     "coincide_hash": false,
+     "sale": "h",
+     "entra": "t"
+    },
+    {
+     "s": 47,
+     "ventana": " tradit",
+     "hash": 24,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "i"
+    },
+    {
+     "s": 48,
+     "ventana": "traditi",
+     "hash": 15,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "o"
+    },
+    {
+     "s": 49,
+     "ventana": "raditio",
+     "hash": 63,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "n"
+    },
+    {
+     "s": 50,
+     "ventana": "adition",
+     "hash": 1,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "a"
+    },
+    {
+     "s": 51,
+     "ventana": "ditiona",
+     "hash": 97,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": "l"
+    },
+    {
+     "s": 52,
+     "ventana": "itional",
+     "hash": 30,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": " "
+    },
+    {
+     "s": 53,
+     "ventana": "tional ",
+     "hash": 90,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "a"
+    },
+    {
+     "s": 54,
+     "ventana": "ional a",
+     "hash": 59,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "l"
+    },
+    {
+     "s": 55,
+     "ventana": "onal al",
+     "hash": 15,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": "g"
+    },
+    {
+     "s": 56,
+     "ventana": "nal alg",
+     "hash": 38,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "o"
+    },
+    {
+     "s": 57,
+     "ventana": "al algo",
+     "hash": 12,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "r"
+    },
+    {
+     "s": 58,
+     "ventana": "l algor",
+     "hash": 1,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "i"
+    },
+    {
+     "s": 59,
+     "ventana": " algori",
+     "hash": 1,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "t"
+    },
+    {
+     "s": 60,
+     "ventana": "algorit",
+     "hash": 97,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "h"
+    },
+    {
+     "s": 61,
+     "ventana": "lgorith",
+     "hash": 36,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "m"
+    },
+    {
+     "s": 62,
+     "ventana": "gorithm",
+     "hash": 77,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "s"
+    },
+    {
+     "s": 63,
+     "ventana": "orithms",
+     "hash": 58,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": " "
+    },
+    {
+     "s": 64,
+     "ventana": "rithms ",
+     "hash": 67,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "("
+    },
+    {
+     "s": 65,
+     "ventana": "ithms (",
+     "hash": 46,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "e"
+    },
+    {
+     "s": 66,
+     "ventana": "thms (e",
+     "hash": 13,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "."
+    },
+    {
+     "s": 67,
+     "ventana": "hms (e.",
+     "hash": 92,
+     "coincide_hash": false,
+     "sale": "h",
+     "entra": "g"
+    },
+    {
+     "s": 68,
+     "ventana": "ms (e.g",
+     "hash": 11,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": "."
+    },
+    {
+     "s": 69,
+     "ventana": "s (e.g.",
+     "hash": 41,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": ","
+    },
+    {
+     "s": 70,
+     "ventana": " (e.g.,",
+     "hash": 23,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": " "
+    },
+    {
+     "s": 71,
+     "ventana": "(e.g., ",
+     "hash": 90,
+     "coincide_hash": false,
+     "sale": "(",
+     "entra": "n"
+    },
+    {
+     "s": 72,
+     "ventana": "e.g., n",
+     "hash": 56,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "a"
+    },
+    {
+     "s": 73,
+     "ventana": ".g., na",
+     "hash": 91,
+     "coincide_hash": false,
+     "sale": ".",
+     "entra": "t"
+    },
+    {
+     "s": 74,
+     "ventana": "g., nat",
+     "hash": 96,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "u"
+    },
+    {
+     "s": 75,
+     "ventana": "., natu",
+     "hash": 76,
+     "coincide_hash": false,
+     "sale": ".",
+     "entra": "r"
+    },
+    {
+     "s": 76,
+     "ventana": ", natur",
+     "hash": 92,
+     "coincide_hash": false,
+     "sale": ",",
+     "entra": "a"
+    },
+    {
+     "s": 77,
+     "ventana": " natura",
+     "hash": 3,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "l"
+    },
+    {
+     "s": 78,
+     "ventana": "natural",
+     "hash": 96,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": " "
+    },
+    {
+     "s": 79,
+     "ventana": "atural ",
+     "hash": 35,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "l"
+    },
+    {
+     "s": 80,
+     "ventana": "tural l",
+     "hash": 25,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "a"
+    },
+    {
+     "s": 81,
+     "ventana": "ural la",
+     "hash": 84,
+     "coincide_hash": false,
+     "sale": "u",
+     "entra": "n"
+    },
+    {
+     "s": 82,
+     "ventana": "ral lan",
+     "hash": 14,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "g"
+    },
+    {
+     "s": 83,
+     "ventana": "al lang",
+     "hash": 75,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "u"
+    },
+    {
+     "s": 84,
+     "ventana": "l langu",
+     "hash": 73,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "a"
+    },
+    {
+     "s": 85,
+     "ventana": " langua",
+     "hash": 43,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "g"
+    },
+    {
+     "s": 86,
+     "ventana": "languag",
+     "hash": 29,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "e"
+    },
+    {
+     "s": 87,
+     "ventana": "anguage",
+     "hash": 95,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": " "
+    },
+    {
+     "s": 88,
+     "ventana": "nguage ",
+     "hash": 58,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "p"
+    },
+    {
+     "s": 89,
+     "ventana": "guage p",
+     "hash": 83,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "r"
+    },
+    {
+     "s": 90,
+     "ventana": "uage pr",
+     "hash": 78,
+     "coincide_hash": false,
+     "sale": "u",
+     "entra": "o"
+    },
+    {
+     "s": 91,
+     "ventana": "age pro",
+     "hash": 95,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "c"
+    },
+    {
+     "s": 92,
+     "ventana": "ge proc",
+     "hash": 24,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "e"
+    },
+    {
+     "s": 93,
+     "ventana": "e proce",
+     "hash": 10,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "s"
+    },
+    {
+     "s": 94,
+     "ventana": " proces",
+     "hash": 49,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "s"
+    },
+    {
+     "s": 95,
+     "ventana": "process",
+     "hash": 62,
+     "coincide_hash": false,
+     "sale": "p",
+     "entra": "i"
+    },
+    {
+     "s": 96,
+     "ventana": "rocessi",
+     "hash": 16,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "n"
+    },
+    {
+     "s": 97,
+     "ventana": "ocessin",
+     "hash": 89,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": "g"
+    },
+    {
+     "s": 98,
+     "ventana": "cessing",
+     "hash": 95,
+     "coincide_hash": false,
+     "sale": "c",
+     "entra": ","
+    },
+    {
+     "s": 99,
+     "ventana": "essing,",
+     "hash": 97,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": " "
+    },
+    {
+     "s": 100,
+     "ventana": "ssing, ",
+     "hash": 18,
+     "coincide_hash": true,
+     "verificacion": "colisión",
+     "sale": "s",
+     "entra": "m"
+    },
+    {
+     "s": 101,
+     "ventana": "sing, m",
+     "hash": 58,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "a"
+    },
+    {
+     "s": 102,
+     "ventana": "ing, ma",
+     "hash": 85,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "c"
+    },
+    {
+     "s": 103,
+     "ventana": "ng, mac",
+     "hash": 97,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "h"
+    },
+    {
+     "s": 104,
+     "ventana": "g, mach",
+     "hash": 60,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "i"
+    },
+    {
+     "s": 105,
+     "ventana": ", machi",
+     "hash": 39,
+     "coincide_hash": false,
+     "sale": ",",
+     "entra": "n"
+    },
+    {
+     "s": 106,
+     "ventana": " machin",
+     "hash": 83,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "e"
+    },
+    {
+     "s": 107,
+     "ventana": "machine",
+     "hash": 66,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": " "
+    },
+    {
+     "s": 108,
+     "ventana": "achine ",
+     "hash": 68,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "l"
+    },
+    {
+     "s": 109,
+     "ventana": "chine l",
+     "hash": 90,
+     "coincide_hash": false,
+     "sale": "c",
+     "entra": "e"
+    },
+    {
+     "s": 110,
+     "ventana": "hine le",
+     "hash": 86,
+     "coincide_hash": false,
+     "sale": "h",
+     "entra": "a"
+    },
+    {
+     "s": 111,
+     "ventana": "ine lea",
+     "hash": 85,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "r"
+    },
+    {
+     "s": 112,
+     "ventana": "ne lear",
+     "hash": 11,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "n"
+    },
+    {
+     "s": 113,
+     "ventana": "e learn",
+     "hash": 68,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "i"
+    },
+    {
+     "s": 114,
+     "ventana": " learni",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "n"
+    },
+    {
+     "s": 115,
+     "ventana": "learnin",
+     "hash": 76,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "g"
+    },
+    {
+     "s": 116,
+     "ventana": "earning",
+     "hash": 9,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": ")"
+    },
+    {
+     "s": 117,
+     "ventana": "arning)",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": " "
+    },
+    {
+     "s": 118,
+     "ventana": "rning) ",
+     "hash": 55,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "a"
+    },
+    {
+     "s": 119,
+     "ventana": "ning) a",
+     "hash": 61,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "n"
+    },
+    {
+     "s": 120,
+     "ventana": "ing) an",
+     "hash": 41,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "d"
+    },
+    {
+     "s": 121,
+     "ventana": "ng) and",
+     "hash": 45,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": " "
+    },
+    {
+     "s": 122,
+     "ventana": "g) and ",
+     "hash": 8,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "a"
+    },
+    {
+     "s": 123,
+     "ventana": ") and a",
+     "hash": 51,
+     "coincide_hash": false,
+     "sale": ")",
+     "entra": "d"
+    },
+    {
+     "s": 124,
+     "ventana": " and ad",
+     "hash": 24,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "v"
+    },
+    {
+     "s": 125,
+     "ventana": "and adv",
+     "hash": 28,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "a"
+    },
+    {
+     "s": 126,
+     "ventana": "nd adva",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "n"
+    },
+    {
+     "s": 127,
+     "ventana": "d advan",
+     "hash": 18,
+     "coincide_hash": true,
+     "verificacion": "colisión",
+     "sale": "d",
+     "entra": "c"
+    },
+    {
+     "s": 128,
+     "ventana": " advanc",
+     "hash": 98,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "e"
+    },
+    {
+     "s": 129,
+     "ventana": "advance",
+     "hash": 68,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "d"
+    },
+    {
+     "s": 130,
+     "ventana": "dvanced",
+     "hash": 82,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": " "
+    },
+    {
+     "s": 131,
+     "ventana": "vanced ",
+     "hash": 53,
+     "coincide_hash": false,
+     "sale": "v",
+     "entra": "a"
+    },
+    {
+     "s": 132,
+     "ventana": "anced a",
+     "hash": 7,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "l"
+    },
+    {
+     "s": 133,
+     "ventana": "nced al",
+     "hash": 28,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "g"
+    },
+    {
+     "s": 134,
+     "ventana": "ced alg",
+     "hash": 70,
+     "coincide_hash": false,
+     "sale": "c",
+     "entra": "o"
+    },
+    {
+     "s": 135,
+     "ventana": "ed algo",
+     "hash": 26,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "r"
+    },
+    {
+     "s": 136,
+     "ventana": "d algor",
+     "hash": 3,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": "i"
+    },
+    {
+     "s": 137,
+     "ventana": " algori",
+     "hash": 1,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "t"
+    },
+    {
+     "s": 138,
+     "ventana": "algorit",
+     "hash": 97,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "h"
+    },
+    {
+     "s": 139,
+     "ventana": "lgorith",
+     "hash": 36,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "m"
+    },
+    {
+     "s": 140,
+     "ventana": "gorithm",
+     "hash": 77,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "s"
+    },
+    {
+     "s": 141,
+     "ventana": "orithms",
+     "hash": 58,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": " "
+    },
+    {
+     "s": 142,
+     "ventana": "rithms ",
+     "hash": 67,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "("
+    },
+    {
+     "s": 143,
+     "ventana": "ithms (",
+     "hash": 46,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "e"
+    },
+    {
+     "s": 144,
+     "ventana": "thms (e",
+     "hash": 13,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "."
+    },
+    {
+     "s": 145,
+     "ventana": "hms (e.",
+     "hash": 92,
+     "coincide_hash": false,
+     "sale": "h",
+     "entra": "g"
+    },
+    {
+     "s": 146,
+     "ventana": "ms (e.g",
+     "hash": 11,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": "."
+    },
+    {
+     "s": 147,
+     "ventana": "s (e.g.",
+     "hash": 41,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": ","
+    },
+    {
+     "s": 148,
+     "ventana": " (e.g.,",
+     "hash": 23,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": " "
+    },
+    {
+     "s": 149,
+     "ventana": "(e.g., ",
+     "hash": 90,
+     "coincide_hash": false,
+     "sale": "(",
+     "entra": "d"
+    },
+    {
+     "s": 150,
+     "ventana": "e.g., d",
+     "hash": 46,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "e"
+    },
+    {
+     "s": 151,
+     "ventana": ".g., de",
+     "hash": 60,
+     "coincide_hash": false,
+     "sale": ".",
+     "entra": "e"
+    },
+    {
+     "s": 152,
+     "ventana": "g., dee",
+     "hash": 23,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "p"
+    },
+    {
+     "s": 153,
+     "ventana": "., deep",
+     "hash": 68,
+     "coincide_hash": false,
+     "sale": ".",
+     "entra": " "
+    },
+    {
+     "s": 154,
+     "ventana": ", deep ",
+     "hash": 83,
+     "coincide_hash": false,
+     "sale": ",",
+     "entra": "l"
+    },
+    {
+     "s": 155,
+     "ventana": " deep l",
+     "hash": 33,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "e"
+    },
+    {
+     "s": 156,
+     "ventana": "deep le",
+     "hash": 93,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": "a"
+    },
+    {
+     "s": 157,
+     "ventana": "eep lea",
+     "hash": 5,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "r"
+    },
+    {
+     "s": 158,
+     "ventana": "ep lear",
+     "hash": 81,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "n"
+    },
+    {
+     "s": 159,
+     "ventana": "p learn",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": "p",
+     "entra": "i"
+    },
+    {
+     "s": 160,
+     "ventana": " learni",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "n"
+    },
+    {
+     "s": 161,
+     "ventana": "learnin",
+     "hash": 76,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "g"
+    },
+    {
+     "s": 162,
+     "ventana": "earning",
+     "hash": 9,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": ","
+    },
+    {
+     "s": 163,
+     "ventana": "arning,",
+     "hash": 25,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": " "
+    },
+    {
+     "s": 164,
+     "ventana": "rning, ",
+     "hash": 15,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "n"
+    },
+    {
+     "s": 165,
+     "ventana": "ning, n",
+     "hash": 35,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "e"
+    },
+    {
+     "s": 166,
+     "ventana": "ing, ne",
+     "hash": 42,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "u"
+    },
+    {
+     "s": 167,
+     "ventana": "ng, neu",
+     "hash": 15,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "r"
+    },
+    {
+     "s": 168,
+     "ventana": "g, neur",
+     "hash": 86,
+     "coincide_hash": false,
+     "sale": "g",
+     "entra": "a"
+    },
+    {
+     "s": 169,
+     "ventana": ", neura",
+     "hash": 21,
+     "coincide_hash": false,
+     "sale": ",",
+     "entra": "l"
+    },
+    {
+     "s": 170,
+     "ventana": " neural",
+     "hash": 18,
+     "coincide_hash": true,
+     "verificacion": "colisión",
+     "sale": " ",
+     "entra": " "
+    },
+    {
+     "s": 171,
+     "ventana": "neural ",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "f"
+    },
+    {
+     "s": 172,
+     "ventana": "eural f",
+     "hash": 48,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "u"
+    },
+    {
+     "s": 173,
+     "ventana": "ural fu",
+     "hash": 83,
+     "coincide_hash": false,
+     "sale": "u",
+     "entra": "z"
+    },
+    {
+     "s": 174,
+     "ventana": "ral fuz",
+     "hash": 73,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "z"
+    },
+    {
+     "s": 175,
+     "ventana": "al fuzz",
+     "hash": 48,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "y"
+    },
+    {
+     "s": 176,
+     "ventana": "l fuzzy",
+     "hash": 33,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": " "
+    },
+    {
+     "s": 177,
+     "ventana": " fuzzy ",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "s"
+    },
+    {
+     "s": 178,
+     "ventana": "fuzzy s",
+     "hash": 81,
+     "coincide_hash": false,
+     "sale": "f",
+     "entra": "y"
+    },
+    {
+     "s": 179,
+     "ventana": "uzzy sy",
+     "hash": 14,
+     "coincide_hash": false,
+     "sale": "u",
+     "entra": "s"
+    },
+    {
+     "s": 180,
+     "ventana": "zzy sys",
+     "hash": 77,
+     "coincide_hash": false,
+     "sale": "z",
+     "entra": "t"
+    },
+    {
+     "s": 181,
+     "ventana": "zy syst",
+     "hash": 63,
+     "coincide_hash": false,
+     "sale": "z",
+     "entra": "e"
+    },
+    {
+     "s": 182,
+     "ventana": "y syste",
+     "hash": 100,
+     "coincide_hash": false,
+     "sale": "y",
+     "entra": "m"
+    },
+    {
+     "s": 183,
+     "ventana": " system",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "s"
+    },
+    {
+     "s": 184,
+     "ventana": "systems",
+     "hash": 18,
+     "coincide_hash": true,
+     "verificacion": "ocurrencia",
+     "sale": "s",
+     "entra": ")"
+    },
+    {
+     "s": 185,
+     "ventana": "ystems)",
+     "hash": 91,
+     "coincide_hash": false,
+     "sale": "y",
+     "entra": " "
+    },
+    {
+     "s": 186,
+     "ventana": "stems) ",
+     "hash": 65,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "w"
+    },
+    {
+     "s": 187,
+     "ventana": "tems) w",
+     "hash": 81,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "e"
+    },
+    {
+     "s": 188,
+     "ventana": "ems) we",
+     "hash": 82,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "r"
+    },
+    {
+     "s": 189,
+     "ventana": "ms) wer",
+     "hash": 98,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": "e"
+    },
+    {
+     "s": 190,
+     "ventana": "s) were",
+     "hash": 47,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": " "
+    },
+    {
+     "s": 191,
+     "ventana": ") were ",
+     "hash": 32,
+     "coincide_hash": false,
+     "sale": ")",
+     "entra": "a"
+    },
+    {
+     "s": 192,
+     "ventana": " were a",
+     "hash": 5,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "p"
+    },
+    {
+     "s": 193,
+     "ventana": "were ap",
+     "hash": 6,
+     "coincide_hash": false,
+     "sale": "w",
+     "entra": "p"
+    },
+    {
+     "s": 194,
+     "ventana": "ere app",
+     "hash": 73,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "l"
+    },
+    {
+     "s": 195,
+     "ventana": "re appl",
+     "hash": 10,
+     "coincide_hash": false,
+     "sale": "r",
+     "entra": "i"
+    },
+    {
+     "s": 196,
+     "ventana": "e appli",
+     "hash": 63,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "e"
+    },
+    {
+     "s": 197,
+     "ventana": " applie",
+     "hash": 69,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "d"
+    },
+    {
+     "s": 198,
+     "ventana": "applied",
+     "hash": 16,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": " "
+    },
+    {
+     "s": 199,
+     "ventana": "pplied ",
+     "hash": 34,
+     "coincide_hash": false,
+     "sale": "p",
+     "entra": "i"
+    },
+    {
+     "s": 200,
+     "ventana": "plied i",
+     "hash": 19,
+     "coincide_hash": false,
+     "sale": "p",
+     "entra": "n"
+    },
+    {
+     "s": 201,
+     "ventana": "lied in",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": " "
+    },
+    {
+     "s": 202,
+     "ventana": "ied in ",
+     "hash": 52,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "s"
+    },
+    {
+     "s": 203,
+     "ventana": "ed in s",
+     "hash": 48,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "t"
+    },
+    {
+     "s": 204,
+     "ventana": "d in st",
+     "hash": 82,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": "e"
+    },
+    {
+     "s": 205,
+     "ventana": " in ste",
+     "hash": 21,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "m"
+    },
+    {
+     "s": 206,
+     "ventana": "in stem",
+     "hash": 59,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": " "
+    },
+    {
+     "s": 207,
+     "ventana": "n stem ",
+     "hash": 40,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "e"
+    },
+    {
+     "s": 208,
+     "ventana": " stem e",
+     "hash": 9,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "d"
+    },
+    {
+     "s": 209,
+     "ventana": "stem ed",
+     "hash": 8,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "u"
+    },
+    {
+     "s": 210,
+     "ventana": "tem edu",
+     "hash": 31,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "c"
+    },
+    {
+     "s": 211,
+     "ventana": "em educ",
+     "hash": 6,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "a"
+    },
+    {
+     "s": 212,
+     "ventana": "m educa",
+     "hash": 17,
+     "coincide_hash": false,
+     "sale": "m",
+     "entra": "t"
+    },
+    {
+     "s": 213,
+     "ventana": " educat",
+     "hash": 31,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "i"
+    },
+    {
+     "s": 214,
+     "ventana": "educati",
+     "hash": 90,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "o"
+    },
+    {
+     "s": 215,
+     "ventana": "ducatio",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": "d",
+     "entra": "n"
+    },
+    {
+     "s": 216,
+     "ventana": "ucation",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": "u",
+     "entra": "a"
+    },
+    {
+     "s": 217,
+     "ventana": "cationa",
+     "hash": 87,
+     "coincide_hash": false,
+     "sale": "c",
+     "entra": "l"
+    },
+    {
+     "s": 218,
+     "ventana": "ational",
+     "hash": 32,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": " "
+    },
+    {
+     "s": 219,
+     "ventana": "tional ",
+     "hash": 90,
+     "coincide_hash": false,
+     "sale": "t",
+     "entra": "a"
+    },
+    {
+     "s": 220,
+     "ventana": "ional a",
+     "hash": 59,
+     "coincide_hash": false,
+     "sale": "i",
+     "entra": "s"
+    },
+    {
+     "s": 221,
+     "ventana": "onal as",
+     "hash": 22,
+     "coincide_hash": false,
+     "sale": "o",
+     "entra": "s"
+    },
+    {
+     "s": 222,
+     "ventana": "nal ass",
+     "hash": 24,
+     "coincide_hash": false,
+     "sale": "n",
+     "entra": "e"
+    },
+    {
+     "s": 223,
+     "ventana": "al asse",
+     "hash": 54,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "s"
+    },
+    {
+     "s": 224,
+     "ventana": "l asses",
+     "hash": 48,
+     "coincide_hash": false,
+     "sale": "l",
+     "entra": "s"
+    },
+    {
+     "s": 225,
+     "ventana": " assess",
+     "hash": 24,
+     "coincide_hash": false,
+     "sale": " ",
+     "entra": "m"
+    },
+    {
+     "s": 226,
+     "ventana": "assessm",
+     "hash": 19,
+     "coincide_hash": false,
+     "sale": "a",
+     "entra": "e"
+    },
+    {
+     "s": 227,
+     "ventana": "ssessme",
+     "hash": 63,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "n"
+    },
+    {
+     "s": 228,
+     "ventana": "sessmen",
+     "hash": 65,
+     "coincide_hash": false,
+     "sale": "s",
+     "entra": "t"
+    },
+    {
+     "s": 229,
+     "ventana": "essment",
+     "hash": 78,
+     "coincide_hash": false,
+     "sale": "e",
+     "entra": "."
+    },
+    {
+     "s": 230,
+     "ventana": "ssment.",
+     "hash": 16,
+     "coincide_hash": false
+    }
+   ],
+   "posiciones": [
+    184
+   ],
+   "colisiones": 5
+  },
+  "colisiones_primo_grande": 0,
+  "hash_patron_grande": 875207481
+ }
+}

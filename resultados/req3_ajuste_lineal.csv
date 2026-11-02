@@ -1,0 +1,4 @@
+algoritmo,microsegundos_por_caracter,r2
+KMP,0.07283,1.00000
+Boyer-Moore,0.03526,1.00000
+Rabin-Karp,0.20294,0.99999

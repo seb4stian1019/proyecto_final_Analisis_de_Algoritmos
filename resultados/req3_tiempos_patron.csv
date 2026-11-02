@@ -1,0 +1,19 @@
+m,patron,algoritmo,preprocesamiento_ms,busqueda_ms,comparaciones,ocurrencias
+2,ar,KMP,0.00070,2.17245,29999,237
+2,ar,Boyer-Moore,0.00230,3.16960,15467,237
+2,ar,Rabin-Karp,0.00100,3.96680,474,237
+4,arti,KMP,0.00090,2.17090,30198,38
+4,arti,Boyer-Moore,0.00510,1.77440,8774,38
+4,arti,Rabin-Karp,0.00150,5.38100,152,38
+8,artifici,KMP,0.00120,2.19290,30214,22
+8,artifici,Boyer-Moore,0.01520,0.88685,4378,22
+8,artifici,Rabin-Karp,0.00195,5.65345,176,22
+16,artificial intel,KMP,0.00170,2.17115,30192,22
+16,artificial intel,Boyer-Moore,0.06390,0.68790,3503,22
+16,artificial intel,Rabin-Karp,0.00280,5.60795,352,22
+32,artificial intelligence (ai) is ,KMP,0.00290,2.17020,30202,2
+32,artificial intelligence (ai) is ,Boyer-Moore,0.32465,0.37565,1995,2
+32,artificial intelligence (ai) is ,Rabin-Karp,0.00490,5.68060,64,2
+64,artificial intelligence (ai) is finding its way into more and mo,KMP,0.00470,2.21180,30201,1
+64,artificial intelligence (ai) is finding its way into more and mo,Boyer-Moore,1.85235,0.31005,1556,1
+64,artificial intelligence (ai) is finding its way into more and mo,Rabin-Karp,0.00840,5.58940,64,1
