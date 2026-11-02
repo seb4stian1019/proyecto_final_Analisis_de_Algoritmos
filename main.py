@@ -7,10 +7,13 @@ import sys
 
 import paso1_corpus
 import pruebas_busqueda
+import pruebas_clustering
 import pruebas_similitud
 import req1_caso_estudio
 import req1_embeddings
 import req1_similitud
+import req2_agrupamiento
+import req2_caso_estudio
 import req3_busqueda
 import req3_caso_estudio
 import req3_tiempos
@@ -41,6 +44,15 @@ def main():
 
     print("\n=== Requerimiento 1: caso de estudio paso a paso (artículos 11 y 16) ===")
     req1_caso_estudio.main()
+
+    print("\n=== Requerimiento 2: pruebas del agrupamiento jerárquico ===")
+    pruebas_clustering.main()
+
+    print("\n=== Requerimiento 2: agrupamiento de los 20 abstracts y dendrogramas ===")
+    req2_agrupamiento.main()
+
+    print("\n=== Requerimiento 2: caso de estudio paso a paso (artículos 2, 6, 11, 16 y 19) ===")
+    req2_caso_estudio.main()
 
     print("\n=== Requerimiento 3: pruebas de los algoritmos de búsqueda ===")
     pruebas_busqueda.main()
