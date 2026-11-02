@@ -1,0 +1,7 @@
+algoritmo,promedio,minimo,maximo,par_mas_parecido
+Levenshtein,0.0413,0.0084,0.1092,2-20
+LCS,0.0889,0.0327,0.1727,2-9
+Jaccard,0.0908,0.0268,0.1607,8-10
+Coseno TF-IDF,0.0432,0.0010,0.1984,2-6
+GloVe,0.9683,0.9388,0.9903,15-20
+MiniLM,0.5532,0.3406,0.8098,6-9

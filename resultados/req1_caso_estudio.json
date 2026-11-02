@@ -1,0 +1,567 @@
+{
+ "articulos": {
+  "11": "A scoping review on how generative artificial intelligence transforms assessment in higher education",
+  "16": "Generative Artificial Intelligence in Tertiary Education: Assessment Redesign Principles and Considerations"
+ },
+ "programacion_dinamica": {
+  "oracion_a": [
+   "generative",
+   "artificial",
+   "intelligence",
+   "provides",
+   "opportunities",
+   "challenges",
+   "higher",
+   "education"
+  ],
+  "oracion_b": [
+   "emergence",
+   "generative",
+   "artificial",
+   "intelligence",
+   "ai",
+   "chatgpt",
+   "sparked",
+   "significant",
+   "assessment",
+   "concerns",
+   "within",
+   "tertiary",
+   "education"
+  ],
+  "matriz_levenshtein": [
+   [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   [
+    1,
+    1,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   [
+    2,
+    2,
+    2,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   [
+    3,
+    3,
+    3,
+    2,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   [
+    4,
+    4,
+    4,
+    3,
+    2,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   [
+    5,
+    5,
+    5,
+    4,
+    3,
+    3,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   [
+    6,
+    6,
+    6,
+    5,
+    4,
+    4,
+    4,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   [
+    7,
+    7,
+    7,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   [
+    8,
+    8,
+    8,
+    7,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    7,
+    8,
+    9,
+    9
+   ]
+  ],
+  "matriz_lcs": [
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4
+   ]
+  ],
+  "lcs_oracion": [
+   "generative",
+   "artificial",
+   "intelligence",
+   "education"
+  ],
+  "palabras_a": 115,
+  "palabras_b": 97,
+  "distancia_completa": 109,
+  "lcs_completa": [
+   "generative",
+   "artificial",
+   "intelligence",
+   "education",
+   "assessment",
+   "generative",
+   "retrieved",
+   "education",
+   "assessment",
+   "ai",
+   "ai"
+  ]
+ },
+ "jaccard": {
+  "A": 82,
+  "B": 72,
+  "interseccion": [
+   "ai",
+   "artificial",
+   "assessment",
+   "challenges",
+   "education",
+   "generative",
+   "integrity",
+   "intelligence",
+   "provide",
+   "rethink",
+   "retrieved",
+   "students"
+  ],
+  "union": 142
+ },
+ "tfidf": {
+  "filas": [
+   {
+    "palabra": "generative",
+    "veces_a": 2,
+    "veces_b": 7,
+    "df": 5,
+    "idf": 1.3862943611198906,
+    "peso_a": 0.02410946714991114,
+    "peso_b": 0.10004186111174466,
+    "producto": 0.002411955964089581
+   },
+   {
+    "palabra": "assessment",
+    "veces_a": 8,
+    "veces_b": 3,
+    "df": 10,
+    "idf": 0.6931471805599453,
+    "peso_a": 0.04821893429982228,
+    "peso_b": 0.021437541666802434,
+    "producto": 0.0010336954131812493
+   },
+   {
+    "palabra": "integrity",
+    "veces_a": 1,
+    "veces_b": 1,
+    "df": 2,
+    "idf": 2.302585092994046,
+    "peso_a": 0.020022479069513443,
+    "peso_b": 0.023737990649423155,
+    "producto": 0.00047529342093038094
+   },
+   {
+    "palabra": "rethink",
+    "veces_a": 1,
+    "veces_b": 1,
+    "df": 2,
+    "idf": 2.302585092994046,
+    "peso_a": 0.020022479069513443,
+    "peso_b": 0.023737990649423155,
+    "producto": 0.00047529342093038094
+   },
+   {
+    "palabra": "retrieved",
+    "veces_a": 1,
+    "veces_b": 1,
+    "df": 2,
+    "idf": 2.302585092994046,
+    "peso_a": 0.020022479069513443,
+    "peso_b": 0.023737990649423155,
+    "producto": 0.00047529342093038094
+   },
+   {
+    "palabra": "students",
+    "veces_a": 2,
+    "veces_b": 1,
+    "df": 8,
+    "idf": 0.9162907318741551,
+    "peso_a": 0.01593549098911574,
+    "peso_b": 0.009446296204888197,
+    "producto": 0.00015053136805351407
+   },
+   {
+    "palabra": "challenges",
+    "veces_a": 1,
+    "veces_b": 1,
+    "df": 6,
+    "idf": 1.2039728043259361,
+    "peso_a": 0.01046932873326901,
+    "peso_b": 0.012412090766246765,
+    "producto": 0.0001299462584990102
+   },
+   {
+    "palabra": "provide",
+    "veces_a": 1,
+    "veces_b": 1,
+    "df": 10,
+    "idf": 0.6931471805599453,
+    "peso_a": 0.006027366787477785,
+    "peso_b": 0.007145847222267477,
+    "producto": 4.307064221588538e-05
+   },
+   {
+    "palabra": "ai",
+    "veces_a": 2,
+    "veces_b": 7,
+    "df": 18,
+    "idf": 0.10536051565782635,
+    "peso_a": 0.001832356794049154,
+    "peso_b": 0.007603336181492623,
+    "producto": 1.3932024709597757e-05
+   },
+   {
+    "palabra": "education",
+    "veces_a": 4,
+    "veces_b": 2,
+    "df": 18,
+    "idf": 0.10536051565782635,
+    "peso_a": 0.003664713588098308,
+    "peso_b": 0.0021723817661407495,
+    "producto": 7.961156976913006e-06
+   },
+   {
+    "palabra": "artificial",
+    "veces_a": 2,
+    "veces_b": 1,
+    "df": 20,
+    "idf": 0.0,
+    "peso_a": 0.0,
+    "peso_b": 0.0,
+    "producto": 0.0
+   },
+   {
+    "palabra": "intelligence",
+    "veces_a": 2,
+    "veces_b": 1,
+    "df": 20,
+    "idf": 0.0,
+    "peso_a": 0.0,
+    "peso_b": 0.0,
+    "producto": 0.0
+   }
+  ],
+  "producto": 0.005216973090516893,
+  "norma_a": 0.19673217872721757,
+  "norma_b": 0.2696991964001064,
+  "coseno": 0.09832490660766512,
+  "angulo": 84.35728069906915
+ },
+ "ia": {
+  "GloVe": {
+   "dimensiones": 50,
+   "u": [
+    0.08463613043478259,
+    0.08990701391304345,
+    -0.17202117391304347,
+    -0.34243810434782607,
+    0.03351555913043479
+   ],
+   "v": [
+    0.11809441666666665,
+    -0.03664937187500001,
+    -0.07467005937500003,
+    -0.15140301666666667,
+    -0.023177062500000015
+   ],
+   "producto": 8.386176678241185,
+   "norma_u": 3.2532198316159087,
+   "norma_v": 2.7040517462281763,
+   "coseno": 0.9533131823285873,
+   "angulo": 17.57676999270476
+  },
+  "MiniLM": {
+   "dimensiones": 384,
+   "u": [
+    -0.07128630578517914,
+    0.016695570200681686,
+    0.004667805042117834,
+    0.010018718428909779,
+    -0.038305774331092834
+   ],
+   "v": [
+    -0.09853937476873398,
+    -0.004082563333213329,
+    0.05794578045606613,
+    -0.022400178015232086,
+    0.0034917977172881365
+   ],
+   "producto": 0.7354903158603561,
+   "norma_u": 1.0000000010360433,
+   "norma_v": 1.0000000090079288,
+   "coseno": 0.735490308473112,
+   "angulo": 42.651337220020984
+  }
+ },
+ "resumen": {
+  "Levenshtein": {
+   "similitud": 0.05217391304347829,
+   "puesto": 6
+  },
+  "LCS": {
+   "similitud": 0.09565217391304348,
+   "puesto": 7
+  },
+  "Jaccard": {
+   "similitud": 0.08450704225352113,
+   "puesto": 16
+  },
+  "Coseno TF-IDF": {
+   "similitud": 0.09832490660766512,
+   "puesto": 1
+  },
+  "GloVe": {
+   "similitud": 0.9533131823285873,
+   "puesto": 17
+  },
+  "MiniLM": {
+   "similitud": 0.735490308473112,
+   "puesto": 1
+  }
+ }
+}
