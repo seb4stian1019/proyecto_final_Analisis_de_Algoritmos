@@ -32,6 +32,7 @@ También se puede ejecutar cada script por separado, por ejemplo:
 | Archivo | Qué hace | Estado |
 |---|---|---|
 | `paso1_corpus.py` | Extrae título, autores y abstract de cada PDF → `resultados/corpus.json` | Listo |
+| `verificar_corpus.py` | Busca en la página 1 de cada PDF el título, los autores y cada oración del abstract extraídos → `resultados/verificacion_corpus.csv` | Listo |
 | `datos.py` | Lee `resultados/corpus.json` para los demás módulos | Listo |
 | `busqueda.py` | Fuerza bruta (referencia), KMP, Boyer-Moore y Rabin-Karp, cada uno separado en preprocesamiento y búsqueda | Listo |
 | `req3_busqueda.py` | Busca un patrón del usuario en los 20 abstracts y verifica que los tres algoritmos coincidan | Listo |
