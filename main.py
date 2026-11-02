@@ -14,12 +14,16 @@ import req1_similitud
 import req3_busqueda
 import req3_caso_estudio
 import req3_tiempos
+import verificar_corpus
 from datos import RESULTADOS
 
 
 def main():
     print("=== Paso 1: título, autores y abstract de cada PDF ===")
     paso1_corpus.main()
+
+    print("\n=== Paso 1: verificación del corpus contra los PDF ===")
+    verificar_corpus.main()
 
     print("\n=== Requerimiento 1: pruebas de los algoritmos de similitud ===")
     pruebas_similitud.main()
