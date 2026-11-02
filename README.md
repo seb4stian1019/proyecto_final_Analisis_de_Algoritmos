@@ -16,6 +16,7 @@ de 20 artículos científicos. Todos los algoritmos están programados a mano.
 También se puede ejecutar cada script por separado, por ejemplo:
 
 - `python req1_similitud.py 11 16` compara dos (o más) artículos con los 6 algoritmos.
+- `python req2_agrupamiento.py` agrupa los 20 abstracts con los 3 criterios y dibuja los dendrogramas.
 - `python req3_busqueda.py "generative ai"` busca un patrón en los 20 abstracts.
 - `python req3_tiempos.py` vuelve a medir los tiempos en el equipo actual.
 
@@ -24,7 +25,7 @@ También se puede ejecutar cada script por separado, por ejemplo:
 | Librería | Uso | ¿Implementa algún algoritmo pedido? |
 |---|---|---|
 | pdfminer.six | Leer el texto de los PDF, con el tamaño y la posición de cada carácter | No |
-| matplotlib | Dibujar las gráficas | No |
+| matplotlib | Dibujar las gráficas y las líneas de los dendrogramas (las coordenadas se calculan en `clustering.py`) | No |
 | sentence-transformers | Solo en `req1_embeddings.py`: convertir cada abstract en un vector con el modelo MiniLM (la similitud se calcula a mano) | No |
 
 ## Estructura
@@ -45,5 +46,8 @@ También se puede ejecutar cada script por separado, por ejemplo:
 | `req1_embeddings.py` | Vectores de los 20 abstracts con GloVe y MiniLM → `resultados/req1_embeddings.json` | Listo |
 | `req1_similitud.py` | Compara dos o más artículos con los 6 algoritmos; sin argumentos, matrices 20 x 20 | Listo |
 | `req1_caso_estudio.py` | Caso de estudio paso a paso (artículos 11 y 16) → `resultados/req1_caso_estudio.json` | Listo |
-| Requerimiento 2 | Agrupamiento jerárquico y dendrogramas | Pendiente |
+| `clustering.py` | Matriz de distancias (1 − coseno TF-IDF), agrupamiento aglomerativo con Single, Complete y Average linkage, matriz y correlación cofenética, corte en k grupos y dendrograma | Listo |
+| `pruebas_clustering.py` | Caso calculado a mano, 2.000 matrices aleatorias contra la definición de cada criterio y, si está instalado, comparación con scipy | Listo |
+| `req2_agrupamiento.py` | Agrupa los 20 abstracts con los 3 criterios → dendrogramas, uniones y `resultados/req2_evaluacion.csv` | Listo |
+| `req2_caso_estudio.py` | Caso de estudio paso a paso con los artículos 2, 6, 11, 16 y 19 → `resultados/req2_caso_estudio.json` | Listo |
 | Requerimiento 4 | Aplicación desplegada | Pendiente |
