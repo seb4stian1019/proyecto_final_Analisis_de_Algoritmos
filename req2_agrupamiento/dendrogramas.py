@@ -13,13 +13,13 @@ Archivos que genera en resultados/:
   req2_dendrograma_<criterio>.png  dendrograma de cada criterio
   req2_evaluacion.csv              correlación cofenética y grupos al cortar en k = 4
 
-Uso:  python req2_agrupamiento.py
+Uso:  python -m req2_agrupamiento.dendrogramas
 """
 
 import csv
 
-import clustering as cl
-from datos import RESULTADOS, cargar_corpus
+from req2_agrupamiento import clustering as cl
+from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
 
 NOMBRES = {"single": "Single linkage (enlace simple)",
            "complete": "Complete linkage (enlace completo)",

@@ -5,7 +5,7 @@ Requerimiento 2 del proyecto final.
 
 Todo está programado a mano: solo se usan ciclos, listas, diccionarios y
 math.sqrt. No se usa scipy, sklearn ni ninguna librería que agrupe por nosotros
-(scipy aparece solo en pruebas_clustering.py, para comprobar los resultados).
+(scipy aparece solo en pruebas.py, para comprobar los resultados).
 matplotlib solo dibuja las líneas del dendrograma que calculamos aquí.
 
 Idea del algoritmo (igual para los tres criterios):
@@ -25,7 +25,7 @@ número k crea el grupo n + k. Esta lista de uniones ES el árbol (dendrograma).
 
 import math
 
-from similitud import ModeloTFIDF, coseno_diccionarios, preprocesar
+from req1_similitud.similitud import ModeloTFIDF, coseno_diccionarios, preprocesar
 
 CRITERIOS = ("single", "complete", "average")
 
@@ -35,7 +35,7 @@ CRITERIOS = ("single", "complete", "average")
 # ===========================================================================
 def matriz_distancias(abstracts):
     """D[i][j] = 1 - coseno(TF-IDF de i, TF-IDF de j).
-    Se reutilizan las funciones del Requerimiento 1 (similitud.py):
+    Se reutilizan las funciones del Requerimiento 1 (req1_similitud/similitud.py):
       - preprocesar: minúsculas, solo letras, sin palabras vacías;
       - ModeloTFIDF: idf calculado con los 20 abstracts y coseno a mano.
     El coseno está entre 0 y 1, así que la distancia también:

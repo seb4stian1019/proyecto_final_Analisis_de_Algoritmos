@@ -16,9 +16,9 @@ recolector de basura desactivado, orden aleatorio en cada ronda y la MEDIANA.
 
 Salida: resultados/req3_tiempos_patron.csv, resultados/req3_tiempos_texto.csv,
         resultados/req3_grafico_patron.png, resultados/req3_grafico_texto.png,
-        resultados/entorno.txt
+        resultados/req3_entorno.txt
 Requiere: pip install matplotlib
-Uso: python req3_tiempos.py
+Uso: python -m req3_busqueda.tiempos
 """
 
 import csv
@@ -34,8 +34,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
-import busqueda as b
-from datos import RESULTADOS, cargar_corpus
+from req3_busqueda import busqueda as b
+from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
 
 # Cada algoritmo separado en (preprocesar, buscar). buscar recibe lo que devuelve preprocesar.
 ALGORITMOS = {
@@ -201,7 +201,7 @@ def main():
     grafico(filas2, "n", "Largo del texto n (caracteres)",
             f"Tiempo según el largo del texto (patrón \"{PATRON_FIJO}\")", "req3_grafico_texto.png", solo_busqueda=True)
 
-    (RESULTADOS / "entorno.txt").write_text(
+    (RESULTADOS / "req3_entorno.txt").write_text(
         f"Fecha: {datetime.now():%Y-%m-%d %H:%M}\n"
         f"Sistema: {platform.platform()}\n"
         f"Procesador: {platform.processor() or platform.machine()}\n"

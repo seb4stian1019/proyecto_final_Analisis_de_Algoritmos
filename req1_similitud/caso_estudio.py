@@ -14,7 +14,7 @@ demostración de Levenshtein y LCS usa la PRIMERA ORACIÓN de cada abstract. Los
 valores finales se calculan con los abstracts completos.
 
 Salida: resultados/req1_caso_estudio.json y resultados/req1_grafico_caso.png
-Uso:    python req1_caso_estudio.py
+Uso:    python -m req1_similitud.caso_estudio
 """
 
 import json
@@ -24,9 +24,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-import similitud as s
-from datos import RESULTADOS, cargar_corpus
-from req1_similitud import NOMBRES, Comparador
+from req1_similitud import similitud as s
+from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
+from req1_similitud.comparar import NOMBRES, Comparador
 
 A, B = 11, 16
 DIMENSIONES_MOSTRADAS = 5           # primeras componentes de los vectores densos que se imprimen

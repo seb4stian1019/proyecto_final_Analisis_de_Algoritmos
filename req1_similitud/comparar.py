@@ -4,7 +4,7 @@ REQUERIMIENTO 1 - Similitud entre dos o más abstracts elegidos por el usuario
 El usuario elige dos o más artículos (por su número, 1 a 20) y el programa
 compara cada par de abstracts con los seis algoritmos:
 
-  Clásicos (similitud.py)                 Con IA (vectores de req1_embeddings.py)
+  Clásicos (similitud.py)                 Con IA (vectores de embeddings.py)
   1. Levenshtein   (programación dinámica)   5. GloVe  + coseno
   2. LCS           (programación dinámica)   6. MiniLM + coseno
   3. Jaccard       (conjuntos)
@@ -13,17 +13,17 @@ compara cada par de abstracts con los seis algoritmos:
 Sin argumentos, calcula además la matriz 20 x 20 de cada algoritmo y la guarda
 en resultados/ (la usan el análisis crítico y el Requerimiento 2).
 
-Uso:  python req1_similitud.py 11 16          (dos artículos)
-      python req1_similitud.py 3 11 16 18     (cuatro artículos: 6 pares)
-      python req1_similitud.py                (matrices completas)
+Uso:  python -m req1_similitud.comparar 11 16          (dos artículos)
+      python -m req1_similitud.comparar 3 11 16 18     (cuatro artículos: 6 pares)
+      python -m req1_similitud.comparar                (matrices completas)
 """
 
 import csv
 import json
 import sys
 
-import similitud as s
-from datos import RESULTADOS, cargar_corpus
+from req1_similitud import similitud as s
+from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
 
 NOMBRES = ["Levenshtein", "LCS", "Jaccard", "Coseno TF-IDF", "GloVe", "MiniLM"]
 
@@ -38,7 +38,7 @@ class Comparador:
         self.tfidf = s.ModeloTFIDF(list(self.palabras.values()))
         ruta = RESULTADOS / "req1_embeddings.json"
         if not ruta.exists():
-            raise SystemExit("Falta resultados/req1_embeddings.json: ejecute primero  python req1_embeddings.py")
+            raise SystemExit("Falta resultados/req1_embeddings.json: ejecute primero  python -m req1_similitud.embeddings")
         modelos = json.loads(ruta.read_text(encoding="utf-8"))
         self.glove = modelos["glove"]["vectores"]
         self.minilm = modelos["minilm"]["vectores"]

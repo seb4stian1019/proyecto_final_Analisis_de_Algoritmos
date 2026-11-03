@@ -1,71 +1,71 @@
 """
-Ejecuta todo el proyecto en orden.
-Uso: python main.py
+Ejecuta todo el proyecto en orden: Paso 1, Requerimiento 1, 2 y 3.
+Uso (en la raíz del proyecto):  python main.py
 """
 
 import sys
 
-import paso1_corpus
-import pruebas_busqueda
-import pruebas_clustering
-import pruebas_similitud
-import req1_caso_estudio
-import req1_embeddings
-import req1_similitud
-import req2_agrupamiento
-import req2_caso_estudio
-import req3_busqueda
-import req3_caso_estudio
-import req3_tiempos
-import verificar_corpus
-from datos import RESULTADOS
+import paso1_corpus.extraer
+import paso1_corpus.verificar
+import req1_similitud.caso_estudio
+import req1_similitud.comparar
+import req1_similitud.embeddings
+import req1_similitud.pruebas
+import req2_agrupamiento.caso_estudio
+import req2_agrupamiento.dendrogramas
+import req2_agrupamiento.pruebas
+import req3_busqueda.buscar_patron
+import req3_busqueda.caso_estudio
+import req3_busqueda.pruebas
+import req3_busqueda.tiempos
+from paso1_corpus.datos import RESULTADOS
 
 
 def main():
     print("=== Paso 1: título, autores y abstract de cada PDF ===")
-    paso1_corpus.main()
+    paso1_corpus.extraer.main()
 
     print("\n=== Paso 1: verificación del corpus contra los PDF ===")
-    verificar_corpus.main()
+    paso1_corpus.verificar.main()
 
     print("\n=== Requerimiento 1: pruebas de los algoritmos de similitud ===")
-    pruebas_similitud.main()
+    req1_similitud.pruebas.main()
 
     print("\n=== Requerimiento 1: vectores de los modelos de IA ===")
     if (RESULTADOS / "req1_embeddings.json").exists():
         print("Se usan los vectores ya guardados en resultados/req1_embeddings.json "
-              "(para recalcularlos: python req1_embeddings.py)")
+              "(para recalcularlos: python -m req1_similitud.embeddings)")
     else:
-        req1_embeddings.main()
+        req1_similitud.embeddings.main()
 
     print("\n=== Requerimiento 1: matrices de similitud de los 20 abstracts ===")
-    sys.argv = ["req1_similitud.py"]
-    req1_similitud.main()
+    sys.argv = ["comparar"]                      # sin argumentos: matrices 20 x 20
+    req1_similitud.comparar.main()
 
     print("\n=== Requerimiento 1: caso de estudio paso a paso (artículos 11 y 16) ===")
-    req1_caso_estudio.main()
+    req1_similitud.caso_estudio.main()
 
     print("\n=== Requerimiento 2: pruebas del agrupamiento jerárquico ===")
-    pruebas_clustering.main()
+    req2_agrupamiento.pruebas.main()
 
     print("\n=== Requerimiento 2: agrupamiento de los 20 abstracts y dendrogramas ===")
-    req2_agrupamiento.main()
+    req2_agrupamiento.dendrogramas.main()
 
     print("\n=== Requerimiento 2: caso de estudio paso a paso (artículos 2, 6, 11, 16 y 19) ===")
-    req2_caso_estudio.main()
+    req2_agrupamiento.caso_estudio.main()
 
     print("\n=== Requerimiento 3: pruebas de los algoritmos de búsqueda ===")
-    pruebas_busqueda.main()
+    req3_busqueda.pruebas.main()
 
     print("\n=== Requerimiento 3: ejemplo de búsqueda en el corpus ===")
-    sys.argv = ["req3_busqueda.py", "generative ai"]
-    req3_busqueda.main()
+    sys.argv = ["buscar_patron", "generative ai"]
+    req3_busqueda.buscar_patron.main()
 
     print("\n=== Requerimiento 3: caso de estudio paso a paso ===")
-    req3_caso_estudio.main()
+    req3_busqueda.caso_estudio.main()
 
     print("\n=== Requerimiento 3: medición de tiempos ===")
-    req3_tiempos.main()
+    req3_busqueda.tiempos.main()
 
 
 if __name__ == "__main__":
