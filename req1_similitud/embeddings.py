@@ -26,7 +26,7 @@ import gzip
 import json
 import urllib.request
 
-from paso1_corpus.datos importBASE, RESULTADOS, cargar_corpus
+from paso1_corpus.datos import BASE, RESULTADOS, cargar_corpus
 from req1_similitud.similitud import preprocesar
 
 MODELOS = BASE / "modelos"

@@ -19,7 +19,7 @@ Uso:  python -m req2_agrupamiento.dendrogramas
 import csv
 
 from req2_agrupamiento import clustering as cl
-from paso1_corpus.datos importRESULTADOS, cargar_corpus
+from paso1_corpus.datos import RESULTADOS, cargar_corpus
 
 NOMBRES = {"single": "Single linkage (enlace simple)",
            "complete": "Complete linkage (enlace completo)",
