@@ -15,7 +15,7 @@ Uso:  python -m req3_busqueda.buscar_patron "generative ai"
 import sys
 
 from req3_busqueda.busqueda import boyer_moore, fuerza_bruta, kmp, rabin_karp
-from paso1_corpus.datos import	 cargar_corpus
+from paso1_corpus.datos importcargar_corpus
 
 ALGORITMOS = {"KMP": kmp, "Boyer-Moore": boyer_moore, "Rabin-Karp": rabin_karp}
 

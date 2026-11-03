@@ -21,7 +21,7 @@ Uso:  python -m req2_agrupamiento.caso_estudio
 import json
 
 from req2_agrupamiento import clustering as cl
-from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
+from paso1_corpus.datos importRESULTADOS, cargar_corpus
 
 CASO = [2, 6, 11, 16, 19]
 

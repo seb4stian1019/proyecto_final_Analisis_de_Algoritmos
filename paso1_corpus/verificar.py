@@ -23,7 +23,7 @@ import unicodedata
 from pdfminer.high_level import extract_text
 
 from req3_busqueda.busqueda import kmp
-from paso1_corpus.datos import	 BASE, RESULTADOS, cargar_corpus
+from paso1_corpus.datos importBASE, RESULTADOS, cargar_corpus
 from paso1_corpus.extraer import PARAMETROS
 
 

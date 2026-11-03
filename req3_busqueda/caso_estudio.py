@@ -22,7 +22,7 @@ Uso:    python -m req3_busqueda.caso_estudio
 import json
 
 from req3_busqueda import busqueda as b
-from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
+from paso1_corpus.datos importRESULTADOS, cargar_corpus
 
 PATRON = "systems"
 ARTICULO = 17

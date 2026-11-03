@@ -25,7 +25,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from req1_similitud import similitud as s
-from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
+from paso1_corpus.datos importRESULTADOS, cargar_corpus
 from req1_similitud.comparar import NOMBRES, Comparador
 
 A, B = 11, 16

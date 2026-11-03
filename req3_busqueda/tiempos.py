@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
 from req3_busqueda import busqueda as b
-from paso1_corpus.datos import	 RESULTADOS, cargar_corpus
+from paso1_corpus.datos importRESULTADOS, cargar_corpus
 
 # Cada algoritmo separado en (preprocesar, buscar). buscar recibe lo que devuelve preprocesar.
 ALGORITMOS = {
