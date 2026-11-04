@@ -1,20 +1,20 @@
 """
 Verificación automática del corpus (evidencia del paso 1)
 =========================================================
-Comprueba que lo que paso1_corpus.py extrajo de cada PDF está de verdad en el PDF.
+Comprueba que lo que extraer.py extrajo de cada PDF está de verdad en el PDF.
 
 Para cada artículo se lee de nuevo el texto de la página 1 y se buscan en él:
   - el título completo,
   - cada uno de los autores,
   - cada oración del abstract.
-La búsqueda usa nuestro KMP (busqueda.py).
+La búsqueda usa nuestro KMP (req3_busqueda/busqueda.py).
 
 Para comparar, los dos textos se "normalizan": se dejan solo las letras, en
 minúsculas y sin espacios. Así no importan los saltos de línea, los guiones de
 corte de palabra ("edu-⏎cation") ni los espacios dobles del PDF.
 
-Salida: resultados/verificacion_corpus.csv (una fila por artículo)
-Uso:    python verificar_corpus.py
+Salida: resultados/corpus_verificacion.csv (una fila por artículo)
+Uso:    python -m paso1_corpus.verificar
 """
 
 import csv
@@ -22,9 +22,9 @@ import unicodedata
 
 from pdfminer.high_level import extract_text
 
-from busqueda import kmp
-from datos import BASE, RESULTADOS, cargar_corpus
-from paso1_corpus import PARAMETROS
+from req3_busqueda.busqueda import kmp
+from paso1_corpus.datos import BASE, RESULTADOS, cargar_corpus
+from paso1_corpus.extraer import PARAMETROS
 
 
 def normalizar(texto):
@@ -66,11 +66,11 @@ def main():
         print(f"{fila['id']:>2}  título: {fila['titulo_encontrado']:<3} autores: {fila['autores_encontrados']:<6}"
               f"oraciones del abstract: {fila['oraciones_abstract_encontradas']}")
 
-    with open(RESULTADOS / "verificacion_corpus.csv", "w", newline="", encoding="utf-8") as f:
+    with open(RESULTADOS / "corpus_verificacion.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(filas[0]))
         w.writeheader()
         w.writerows(filas)
-    print("\nResultado guardado en resultados/verificacion_corpus.csv")
+    print("\nResultado guardado en resultados/corpus_verificacion.csv")
 
 
 if __name__ == "__main__":

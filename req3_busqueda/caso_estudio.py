@@ -16,13 +16,13 @@ Este script repite los algoritmos de busqueda.py, pero guardando cada paso
 (traza). Al final comprueba que la traza dé el mismo resultado que busqueda.py.
 
 Salida: resultados/req3_caso_estudio.json  (lo usa el documento)
-Uso:    python req3_caso_estudio.py
+Uso:    python -m req3_busqueda.caso_estudio
 """
 
 import json
 
-import busqueda as b
-from datos import RESULTADOS, cargar_corpus
+from req3_busqueda import busqueda as b
+from paso1_corpus.datos import RESULTADOS, cargar_corpus
 
 PATRON = "systems"
 ARTICULO = 17

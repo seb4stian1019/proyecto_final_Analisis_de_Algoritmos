@@ -7,14 +7,14 @@ Pruebas de los algoritmos de similitud (Requerimiento 1)
 3. Propiedades que toda similitud debe cumplir: valor entre 0 y 1, simetría
    sim(a, b) = sim(b, a) y sim(a, a) = 1.
 
-Uso: python pruebas_similitud.py
+Uso: python -m req1_similitud.pruebas
 """
 
 import math
 import random
 from functools import lru_cache
 
-import similitud as s
+from req1_similitud import similitud as s
 
 # (descripción, valor obtenido, valor esperado) -> resueltos a mano
 CASOS = [

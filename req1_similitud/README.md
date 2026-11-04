@@ -1,8 +1,34 @@
-# 5. Requerimiento 1: análisis de similitud textual
+# Requerimiento 1: similitud textual
+
+Compara dos o más abstracts con cuatro algoritmos clásicos programados a mano y dos modelos de IA.
+
+## Archivos, en orden de lectura
+
+| Orden | Archivo | Qué hace |
+|---|---|---|
+| 1 | `similitud.py` | Preprocesamiento, Levenshtein, LCS, Jaccard, TF-IDF y coseno, matriz de similitud |
+| 2 | `pruebas.py` | Casos calculados a mano y 3.000 pares aleatorios contra la definición recursiva |
+| 3 | `embeddings.py` | Vectores de los 20 abstracts con GloVe y MiniLM → `resultados/req1_embeddings.json` |
+| 4 | `comparar.py` | Compara dos o más artículos con los 6 algoritmos; sin argumentos, matrices 20 x 20 |
+| 5 | `caso_estudio.py` | Caso de estudio paso a paso (artículos 11 y 16) → `resultados/req1_caso_estudio.json` |
+
+## Cómo ejecutarlo
+
+Desde la raíz del proyecto (no desde esta carpeta):
+
+```
+python -m req1_similitud.pruebas
+python -m req1_similitud.comparar 11 16
+python -m req1_similitud.caso_estudio
+```
+
+`embeddings.py` solo hace falta para recalcular los vectores (`pip install -r requirements-ia.txt`).
+
+## Explicación (sección 5 del documento)
 
 La aplicación permite elegir dos o más artículos del corpus y compara cada par de abstracts con seis algoritmos: cuatro clásicos programados desde cero y dos basados en modelos de inteligencia artificial. Todas las medidas se expresan entre 0 (nada en común) y 1 (textos iguales o vectores en la misma dirección).
 
-## 5.1 Preprocesamiento
+### 5.1 Preprocesamiento
 
 Antes de comparar, cada abstract se convierte en una lista de palabras (función `preprocesar` de `similitud.py`):
 
@@ -12,7 +38,7 @@ Antes de comparar, cada abstract se convierte en una lista de palabras (función
 
 Los algoritmos clásicos comparan estas listas de palabras y no letra por letra. Así la comparación refleja los temas compartidos, y las matrices de programación dinámica quedan de unas 115 × 97 casillas en lugar de 1.379 × 1.088 caracteres. El modelo MiniLM, en cambio, recibe el abstract original, porque fue entrenado con texto natural completo.
 
-## 5.2 Algoritmos clásicos
+### 5.2 Algoritmos clásicos
 
 **Distancia de Levenshtein (programación dinámica).** Es el mínimo número de operaciones (insertar, borrar o sustituir una palabra) para convertir un texto en el otro. Se llena una matriz D de (n + 1) × (m + 1), donde D[i][j] es la distancia entre las primeras i palabras de A y las primeras j de B:
 
@@ -50,20 +76,20 @@ N = 20 es el número de abstracts y df(t) es en cuántos aparece la palabra t. U
 
 Costo: O(N·n) para el idf (una vez) y O(n + m) por par.
 
-## 5.3 Modelos basados en inteligencia artificial
+### 5.3 Modelos basados en inteligencia artificial
 
 El enunciado permite usar modelos preentrenados para vectorizar los abstracts. En ambos casos el modelo solo produce el vector; el coseno se calcula a mano con la función `coseno_listas`.
 
 - **GloVe** (Pennington et al., 2014), 50 dimensiones. Es un diccionario fijo que asigna a cada palabra un vector aprendido de Wikipedia. El vector del abstract es el promedio, calculado en el proyecto, de los vectores de sus palabras. No tiene en cuenta el orden ni el contexto.
 - **all-MiniLM-L6-v2** (Sentence-BERT; Reimers y Gurevych, 2019), 384 dimensiones. Es una red neuronal tipo transformer que lee el abstract completo y produce un único vector, teniendo en cuenta el contexto de cada palabra.
 
-Los vectores de los 20 abstracts se calculan una vez (`req1_embeddings.py`) y se guardan en `resultados/req1_embeddings.json`.
+Los vectores de los 20 abstracts se calculan una vez (`embeddings.py`) y se guardan en `resultados/req1_embeddings.json`.
 
-## 5.4 Caso de estudio: artículos 11 y 16
+### 5.4 Caso de estudio: artículos 11 y 16
 
 Se eligieron los artículos 11 («A scoping review on how generative artificial intelligence transforms assessment in higher education») y 16 («Generative Artificial Intelligence in Tertiary Education: Assessment Redesign Principles and Considerations»). Ambos tratan el mismo tema, el impacto de la IA generativa en la evaluación universitaria, pero con vocabulario distinto («higher education» frente a «tertiary education»). Después del preprocesamiento tienen 115 y 97 palabras.
 
-### 5.4.1 Levenshtein
+#### 5.4.1 Levenshtein
 
 Para mostrar el llenado completo de la matriz se usa la primera oración de cada abstract. La tabla muestra D[i][j].
 
@@ -81,7 +107,7 @@ Para mostrar el llenado completo de la matriz se usa la primera oración de cada
 
 La distancia de las dos oraciones es D[8][13] = 9. La diagonal que baja por «generative», «artificial» e «intelligence» no suma operaciones, porque esas palabras coinciden en el mismo orden. Con los abstracts completos la distancia es 109, y la similitud es 1 − 109/115 = 0,0522.
 
-### 5.4.2 LCS
+#### 5.4.2 LCS
 
 | | ∅ | emergence | generative | artificial | intelligence | ai | chatgpt | sparked | significant | assessment | concerns | within | tertiary | education |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -97,11 +123,11 @@ La distancia de las dos oraciones es D[8][13] = 9. La diagonal que baja por «ge
 
 La subsecuencia común de las dos oraciones es «generative artificial intelligence education» (4 palabras). Con los abstracts completos tiene 11 palabras («generative artificial intelligence education assessment generative retrieved education assessment ai ai»), y la similitud es 11/115 = 0,0957.
 
-### 5.4.3 Jaccard
+#### 5.4.3 Jaccard
 
 El artículo 11 tiene |A| = 82 palabras distintas y el 16, |B| = 72. Comparten 12: ai, artificial, assessment, challenges, education, generative, integrity, intelligence, provide, rethink, retrieved, students. La unión tiene 142 palabras, así que J = 12/142 = 0,0845.
 
-### 5.4.4 Coseno con TF-IDF
+#### 5.4.4 Coseno con TF-IDF
 
 Solo las palabras comunes aportan al producto punto. La tabla las ordena por su aporte.
 
@@ -122,14 +148,14 @@ Solo las palabras comunes aportan al producto punto. La tabla las ordena por su 
 
 u · v = 0,005217, |u| = 0,19673 y |v| = 0,26970. Entonces cos θ = 0,005217 / (0,19673 · 0,26970) = 0,0983, un ángulo de 84,4°. «artificial» e «intelligence» están en los 20 abstracts y su idf es 0; «generative» aporta casi la mitad del producto porque aparece en solo 5 abstracts.
 
-### 5.4.5 Modelos de IA
+#### 5.4.5 Modelos de IA
 
 | Modelo | Dimensiones | u · v | ‖u‖ | ‖v‖ | Coseno | Ángulo |
 |---|---|---|---|---|---|---|
 | GloVe | 50 | 8,3862 | 3,2532 | 2,7041 | 0,9533 | 17,6° |
 | MiniLM | 384 | 0,7355 | 1,0000 | 1,0000 | 0,7355 | 42,7° |
 
-### 5.4.6 Resumen del caso
+#### 5.4.6 Resumen del caso
 
 La figura `resultados/req1_grafico_caso.png` muestra los seis valores. La columna «Puesto» indica en qué lugar queda el artículo 16 cuando se ordenan los 19 artículos restantes según su similitud con el 11 (1 = el más parecido).
 
@@ -142,7 +168,7 @@ La figura `resultados/req1_grafico_caso.png` muestra los seis valores. La column
 | GloVe | 0,9533 | 17 de 19 |
 | MiniLM | 0,7355 | 1 de 19 |
 
-## 5.5 Resultados en todo el corpus
+### 5.5 Resultados en todo el corpus
 
 Con los 20 abstracts se calcularon las 190 comparaciones posibles para cada algoritmo (`resultados/req1_matriz_*.csv`).
 
@@ -155,7 +181,7 @@ Con los 20 abstracts se calcularon las 190 comparaciones posibles para cada algo
 | GloVe | 0,9683 | 0,9388 | 0,9903 | 15-20 |
 | MiniLM | 0,5532 | 0,3406 | 0,8098 | 6-9 |
 
-## 5.6 Análisis crítico
+### 5.6 Análisis crítico
 
 **Qué mide cada algoritmo.** Los seis algoritmos no miden lo mismo, y por eso sus valores no se comparan directamente: lo comparable es el orden en que ponen a los artículos. Levenshtein y LCS miden coincidencia de palabras en el mismo orden; Jaccard, vocabulario compartido; TF-IDF, vocabulario compartido pesado por su rareza; GloVe y MiniLM, cercanía de significado.
 
@@ -171,7 +197,7 @@ Con los 20 abstracts se calcularon las 190 comparaciones posibles para cada algo
 
 **Conclusión del caso.** El único algoritmo clásico que coincide con MiniLM en señalar al artículo 16 como el más parecido al 11 es TF-IDF. Los clásicos son transparentes y cada paso se puede verificar a mano, pero dependen de que los textos usen las mismas palabras. MiniLM captura el significado aunque cambien las palabras, a cambio de ser una caja negra de 22 millones de parámetros que no se puede seguir paso a paso. Para comparar temas en este corpus, la mejor opción es MiniLM, y entre los clásicos, TF-IDF.
 
-## 5.7 Complejidad
+### 5.7 Complejidad
 
 | Algoritmo | Tiempo por par | Memoria |
 |---|---|---|

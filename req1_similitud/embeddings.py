@@ -18,7 +18,7 @@ Los vectores se calculan UNA vez y se guardan en resultados/req1_embeddings.json
 Así, el resto del proyecto (y la aplicación web) no necesita los modelos.
 
 Instalación (solo para este script):  pip install -r requirements-ia.txt
-Uso:                                  python req1_embeddings.py
+Uso:                                  python -m req1_similitud.embeddings
 La primera vez descarga los modelos (GloVe ~66 MB, MiniLM ~90 MB) en la carpeta modelos/.
 """
 
@@ -26,8 +26,8 @@ import gzip
 import json
 import urllib.request
 
-from datos import BASE, RESULTADOS, cargar_corpus
-from similitud import preprocesar
+from paso1_corpus.datos import BASE, RESULTADOS, cargar_corpus
+from req1_similitud.similitud import preprocesar
 
 MODELOS = BASE / "modelos"
 URL_GLOVE = ("https://github.com/RaRe-Technologies/gensim-data/releases/download/"

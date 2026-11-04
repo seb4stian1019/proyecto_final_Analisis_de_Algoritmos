@@ -8,14 +8,14 @@ tres encuentren exactamente las mismas posiciones que la fuerza bruta.
 La búsqueda no distingue mayúsculas de minúsculas: texto y patrón se pasan a
 minúsculas antes de buscar.
 
-Uso:  python req3_busqueda.py "generative ai"
-      python req3_busqueda.py            (pregunta el patrón)
+Uso:  python -m req3_busqueda.buscar_patron "generative ai"
+      python -m req3_busqueda.buscar_patron            (pregunta el patrón)
 """
 
 import sys
 
-from busqueda import boyer_moore, fuerza_bruta, kmp, rabin_karp
-from datos import cargar_corpus
+from req3_busqueda.busqueda import boyer_moore, fuerza_bruta, kmp, rabin_karp
+from paso1_corpus.datos import cargar_corpus
 
 ALGORITMOS = {"KMP": kmp, "Boyer-Moore": boyer_moore, "Rabin-Karp": rabin_karp}
 

@@ -7,12 +7,12 @@ Pruebas de los algoritmos de búsqueda (Requerimiento 3)
    exactamente las mismas posiciones que la fuerza bruta. Rabin-Karp se prueba
    también con un primo pequeño (q = 13) para forzar muchas colisiones.
 
-Uso: python pruebas_busqueda.py
+Uso: python -m req3_busqueda.pruebas
 """
 
 import random
 
-import busqueda as b
+from req3_busqueda import busqueda as b
 
 ALGORITMOS = {
     "fuerza bruta": b.fuerza_bruta,

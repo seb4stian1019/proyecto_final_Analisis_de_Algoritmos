@@ -9,13 +9,13 @@ Pruebas del agrupamiento jerárquico (clustering.py)
    scipy.cluster.hierarchy.linkage y cophenet. scipy se usa SOLO aquí, para
    verificar; el proyecto no lo necesita (no está en requirements.txt).
 
-Uso:  python pruebas_clustering.py
+Uso:  python -m req2_agrupamiento.pruebas
 """
 
 import math
 import random
 
-import clustering as cl
+from req2_agrupamiento import clustering as cl
 
 
 def cerca(x, y, tol=1e-9):

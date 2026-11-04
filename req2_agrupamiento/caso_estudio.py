@@ -15,13 +15,13 @@ el 11 y el 16 son los del caso de estudio del Requerimiento 1, y con el 19 los
 tres criterios toman decisiones distintas desde el tercer paso.
 
 Genera resultados/req2_caso_estudio.json y resultados/req2_caso_dendrogramas.png
-Uso:  python req2_caso_estudio.py
+Uso:  python -m req2_agrupamiento.caso_estudio
 """
 
 import json
 
-import clustering as cl
-from datos import RESULTADOS, cargar_corpus
+from req2_agrupamiento import clustering as cl
+from paso1_corpus.datos import RESULTADOS, cargar_corpus
 
 CASO = [2, 6, 11, 16, 19]
 

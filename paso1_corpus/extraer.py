@@ -11,7 +11,7 @@ La extracción del abstract es la misma del seguimiento (ya verificada).
 Lo nuevo es la extracción del título y de los autores (sección B).
 
 Instalación:  pip install pdfminer.six
-Uso:          python paso1_corpus.py [carpeta_de_los_pdf]
+Uso:          python -m paso1_corpus.extraer [carpeta_de_los_pdf]
 """
 
 import json
@@ -24,8 +24,8 @@ from pathlib import Path
 from pdfminer.high_level import extract_pages, extract_text
 from pdfminer.layout import LAParams, LTChar, LTTextContainer, LTTextLine
 
-# Carpeta donde está este script: así las rutas funcionan sin importar desde dónde se ejecute.
-BASE = Path(__file__).resolve().parent
+# Raíz del proyecto (una carpeta arriba de este script): así las rutas funcionan sin importar desde dónde se ejecute.
+BASE = Path(__file__).resolve().parent.parent   # raíz del proyecto
 
 # pdfminer reconstruye el orden de lectura agrupando el texto en bloques (columnas).
 # line_margin=1.0 (por defecto 0.5) deja en un mismo bloque líneas con interlineado
