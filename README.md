@@ -16,6 +16,7 @@ de 20 artículos científicos. Todos los algoritmos están programados a mano.
 | 4 | `req2_agrupamiento/` | Requerimiento 2: agrupamiento jerárquico con 3 criterios y dendrogramas |
 | 5 | `req3_busqueda/` | Requerimiento 3: KMP, Boyer-Moore y Rabin-Karp, y medición de tiempos |
 | 6 | `resultados/` | Lo que genera cada paso, con el prefijo de su paso: `corpus_*`, `req1_*`, `req2_*`, `req3_*` |
+| 7 | `req4_app/` y `app.py` | Requerimiento 4: aplicación web con los tres requerimientos (Streamlit) |
 | — | `main.py` | Ejecuta todo en orden |
 
 Cada carpeta tiene su propio `README.md` con sus archivos en orden de lectura. Dentro de cada
@@ -30,6 +31,7 @@ de `req1_similitud/similitud.py`, y la verificación del Paso 1 usa el KMP de `r
 1. Instalar las dependencias (una sola vez): `pip install -r requirements.txt`
 2. Solo para recalcular los vectores de IA: `pip install -r requirements-ia.txt`
 3. Ejecutar todo en orden, desde la raíz del proyecto: `python main.py`
+4. Abrir la aplicación web en el computador: `python -m streamlit run app.py`
 
 Cada script también se puede ejecutar por separado, siempre desde la raíz y con `-m`
 (carpeta.archivo, sin `.py`), por ejemplo:
@@ -46,3 +48,4 @@ Cada script también se puede ejecutar por separado, siempre desde la raíz y co
 | pdfminer.six | Leer el texto de los PDF, con el tamaño y la posición de cada carácter | No |
 | matplotlib | Dibujar las gráficas y las líneas de los dendrogramas (las coordenadas se calculan en `req2_agrupamiento/clustering.py`) | No |
 | sentence-transformers | Solo en `req1_similitud/embeddings.py`: convertir cada abstract en un vector con el modelo MiniLM (la similitud se calcula a mano) | No |
+| streamlit | Interfaz web de la aplicación (`app.py`); solo muestra los resultados de los módulos del proyecto | No |
