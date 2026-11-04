@@ -124,7 +124,7 @@ with tab_corpus:
 with tab_sim:
     st.subheader("Similitud entre abstracts")
     st.caption("Valores de 0 (nada en común) a 1 (iguales). Código: req1_similitud/similitud.py.")
-    elegidos = sorted(st.multiselect("Elija dos o más artículos", ids, default=[11, 16], format_func=nombre))
+    elegidos = sorted(st.multiselect("Elija dos o más artículos", ids, format_func=nombre))
 
     if len(elegidos) < 2:
         st.info("Elija al menos dos artículos.")
